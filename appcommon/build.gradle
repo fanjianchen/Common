@@ -24,16 +24,13 @@ android {
 
 dependencies {
     //植入X5WebView
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api fileTree(dir: 'libs', include: ['*.jar'])
     //okHttp网络请求框架
-    implementation 'com.squareup.okhttp3:okhttp:3.7.0'
+    api 'com.squareup.okhttp3:okhttp:3.7.0'
     //fastJson解析工具，android版
-    implementation 'com.alibaba:fastjson:1.1.68.android'
+    api 'com.alibaba:fastjson:1.1.68.android'
     //图片加载框架Glide
-    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    api 'com.github.bumptech.glide:glide:3.8.0'
+    api 'com.android.support:appcompat-v7:27.1.1'
 
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
